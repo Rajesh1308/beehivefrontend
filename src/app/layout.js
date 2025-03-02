@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,7 +23,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="bg-warning min-vh-100 w-100">
+          <nav className="bg-black text-warning p-3 d-flex align-items-center shadow-lg">
+            <h1 className="fs-3 fw-bold text-warning ml-10">Your Hive</h1>
+          </nav>
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
