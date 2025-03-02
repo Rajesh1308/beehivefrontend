@@ -12,7 +12,7 @@ export default function HomePage() {
         <header className="text-center text-dark py-5">
           <h1 className="display-4 fw-bold">Smart BeeHive Monitoring</h1>
           <p className="fs-5">Using IoT & AI to detect swarming and protect your bees.</p>
-          <button className="btn btn-dark btn-lg mt-3">Get Started</button>
+          <button onClick={handleClick} className="btn btn-dark btn-lg mt-3">Get Started</button>
         </header>
   
         {/* Features Section */}
@@ -45,7 +45,7 @@ export default function HomePage() {
             <p className="fs-5">
                 Monitor your hive, detect swarming early, and ensure a healthier bee colony.
             </p>
-            <button className="btn btn-warning btn-lg mt-3">Get Started</button>
+            <button onClick={handleClick} className="btn btn-warning btn-lg mt-3">Get Started</button>
 
             {/* Social Links */}
             <div className="mt-4">
