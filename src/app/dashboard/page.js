@@ -87,8 +87,8 @@ export default function Dashboard() {
           {/* Load */}
           <div className="col-md-6">
             <div className="p-3 border rounded text-center">
-              <h5>Load</h5>
-              <p className="fs-4">{load} kg</p>
+              <h5>Air Quality</h5>
+              <p className="fs-4">{load}</p>
             </div>
           </div>
 
@@ -123,7 +123,7 @@ export default function Dashboard() {
             <Graph dataList={temperatureValues} title={"Temperature (°C)"} />
         </div>
         <div className="constainer w-full">
-            <Graph dataList={loadValues} title={"Load (kg)"} />
+            <Graph dataList={loadValues} title={"Air Quality"} />
         </div>
         <div className="constainer w-full">
             <Graph dataList={soundValues} title={"Sound"} />
