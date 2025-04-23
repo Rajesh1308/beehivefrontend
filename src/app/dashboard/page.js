@@ -10,13 +10,11 @@ export default function Dashboard() {
   const [temperature, setTemperature] = useState(25);
   const [humidity, setHumidity] = useState(60);
   const [load, setLoad] = useState(12);
-  const [sound, setSound] = useState(50);
   const [status, setStatus] = useState("Healthy");
   const sampleData = [10, 20, 15, 30, 25, 40, 35];
   const [temperatureValues, setTemperatureValues] = useState([]);
   const [humidityValues, setHumidityValues] = useState([]);
   const [loadValues, setLoadValues] = useState([]);
-  const [soundValues, setSoundValues] = useState([]);
 
   const fetchData = async () => {
     try {
@@ -31,11 +29,9 @@ export default function Dashboard() {
       setHumidityValues(result.humidity);
       setTemperatureValues(result.temperature);
       setLoadValues(result.load);
-      setSoundValues(result.sound);
       setHumidity(result.humidity[(result.humidity).length-1]);
       setTemperature(result.temperature[(result.temperature).length-1]);
       setLoad(result.load[(result.load).length - 1]);
-      setSound(result.sound[(result.sound).length-1]);
 
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -110,10 +106,10 @@ export default function Dashboard() {
         >
             <option value="" disabled>Select an option</option>
             <option value="10">10</option>
-            <option value="25">25</option>
-            <option value="50">50</option>
-            <option value="75">75</option>
-            <option value="100">100</option>
+            <option value="25">24</option>
+            <option value="50">48</option>
+            <option value="75">62</option>
+            <option value="100">86</option>
         </select>
         </div>
         <div className="constainer w-full">
@@ -124,9 +120,6 @@ export default function Dashboard() {
         </div>
         <div className="constainer w-full">
             <Graph dataList={loadValues} title={"Air Quality"} />
-        </div>
-        <div className="constainer w-full">
-            <Graph dataList={soundValues} title={"Sound"} />
         </div>
     </div>
   );
