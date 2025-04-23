@@ -24,7 +24,7 @@ export default function Dashboard() {
         "number_of_records": selectedRange
       }
       console.log(payload)
-      const response = await axios.post("https://beehivebackend-6504.onrender.com/get_sensor_data", payload);
+      const response = await axios.post("https://beehivebackend-vtk6.onrender.com/get_sensor_data", payload);
       const result = response.data;
       setHumidityValues(result.humidity);
       setTemperatureValues(result.temperature);
@@ -119,7 +119,7 @@ export default function Dashboard() {
             <Graph dataList={temperatureValues} title={"Temperature (°C)"} />
         </div>
         <div className="constainer w-full">
-            <Graph dataList={loadValues} title={"Air Quality"} />
+            <Graph dataList={loadValues} title={"Load (kg)"} />
         </div>
     </div>
   );
