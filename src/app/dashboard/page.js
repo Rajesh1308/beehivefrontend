@@ -83,7 +83,7 @@ export default function Dashboard() {
           {/* Load */}
           <div className="col-md-6">
             <div className="p-3 border rounded text-center">
-              <h5>Air Quality</h5>
+              <h5>Load</h5>
               <p className="fs-4">{load}</p>
             </div>
           </div>
