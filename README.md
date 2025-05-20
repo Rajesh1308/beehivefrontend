@@ -16,12 +16,15 @@ This is the frontend interface for the Smart Beehive Monitoring System developed
 
 ## 🔁 Project Flow (Frontend)
 
-```mermaid
-flowchart TD
-    A[User Interface] --> B[Select Hive / View Dashboard]
-    B --> C[Fetch real-time data from backend API]
-    C --> D[Display Graphs: Temp, Humidity, Weight]
-    D --> E[Display ML Swarming Forecast (optional)]
+User Interface
+    ↓
+Hive Selection / Dashboard View
+    ↓
+API Request to Flask Backend
+    ↓
+Receive Real-time Data (Temperature, Humidity, Weight)
+    ↓
+Render Graphs and Forecasts
 
 
 
