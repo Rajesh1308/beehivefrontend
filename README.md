@@ -12,7 +12,7 @@ This is the frontend interface for the Smart Beehive Monitoring System developed
 - Responsive UI built using React + Tailwind CSS  
 - Support for multiple hive selection and monitoring  
 
-## Project Flow (Frontend)
+## Project Flow
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e3af3e81-8588-4596-a334-baa3e453a5f2" width="600" />
