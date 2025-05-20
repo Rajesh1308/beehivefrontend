@@ -1,3 +1,30 @@
+# 🐝 Smart Beehive Monitoring System - Frontend (Next.js)
+
+This is the frontend interface for the Smart Beehive Monitoring System developed using **Next.js**. It visualizes real-time and historical beehive data such as **temperature**, **humidity**, and **weight**, collected using IoT sensors. It also displays **ML-based swarming forecasts** and correlation analysis to assist beekeepers in proactive colony management.
+
+---
+
+## 📌 Features
+
+- 📊 Real-time data visualization of key parameters
+- 🧠 Swarming behavior insights powered by ML models
+- 📈 Historical trends using interactive graphs
+- 🌐 Responsive UI built using React + Tailwind CSS (or Bootstrap)
+- 🐝 Support for multiple hive selection and monitoring
+
+---
+
+## 🔁 Project Flow (Frontend)
+
+```mermaid
+flowchart TD
+    A[User Interface] --> B[Select Hive / View Dashboard]
+    B --> C[Fetch real-time data from backend API]
+    C --> D[Display Graphs: Temp, Humidity, Weight]
+    D --> E[Display ML Swarming Forecast (optional)]
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
