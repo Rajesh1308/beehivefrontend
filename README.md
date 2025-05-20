@@ -44,10 +44,6 @@ This is the frontend interface for the Smart Beehive Monitoring System developed
   <img src="https://github.com/user-attachments/assets/d45acbf7-320f-4d03-a225-79b68d25658d" width="600" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5af36fac-f71d-4d39-861e-7ce1fcfd198f" width="600" />
-</p>
-
 ---
 
 ## Installation & Setup
@@ -56,3 +52,11 @@ This is the frontend interface for the Smart Beehive Monitoring System developed
    ```bash
    git clone https://github.com/Rajesh1308/beehivefrontend.git
    cd beehivefrontend
+
+2. Install packages
+   ```bash
+   npm install
+
+3. Run the application
+   ```bash
+   npm run dev
