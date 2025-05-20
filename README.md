@@ -1,66 +1,40 @@
-# 🐝 Smart Beehive Monitoring System - Frontend (Next.js)
+# Smart Beehive Monitoring System 🐝
 
 This is the frontend interface for the Smart Beehive Monitoring System developed using **Next.js**. It visualizes real-time and historical beehive data such as **temperature**, **humidity**, and **weight**, collected using IoT sensors. It also displays **ML-based swarming forecasts** and correlation analysis to assist beekeepers in proactive colony management.
 
 ---
 
-## 📌 Features
+## Features
 
-- 📊 Real-time data visualization of key parameters
-- 🧠 Swarming behavior insights powered by ML models
-- 📈 Historical trends using interactive graphs
-- 🌐 Responsive UI built using React + Tailwind CSS (or Bootstrap)
-- 🐝 Support for multiple hive selection and monitoring
+- Real-time data visualization of key parameters
+- Swarming behavior insights powered by ML models
+- Historical trends using interactive graphs
+- Responsive UI built using React + Tailwind CSS 
+- Support for multiple hive selection and monitoring
 
 ---
 
-## 🔁 Project Flow (Frontend)
+## Project Flow (Frontend)
 
-User Interface
-    ↓
-Hive Selection / Dashboard View
-    ↓
-API Request to Flask Backend
-    ↓
-Receive Real-time Data (Temperature, Humidity, Weight)
-    ↓
-Render Graphs and Forecasts
+![Project Flow](https://github.com/user-attachments/assets/e3af3e81-8588-4596-a334-baa3e453a5f2)
 
+## Images
 
+![UI-Home_Page](https://github.com/user-attachments/assets/b2026e86-2b58-41e5-b108-13df84e5993c)
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Dashboard-values](https://github.com/user-attachments/assets/8f85267e-578f-4759-9758-f27cfda85df8)
 
-## Getting Started
+![Dashboard-graph-1](https://github.com/user-attachments/assets/a5153aed-b91b-4960-a00f-4f52732b2eff)
 
-First, run the development server:
+## Implementation of project in Tamilnadu Agricultural University
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Implementation_TNAU_1](https://github.com/user-attachments/assets/d45acbf7-320f-4d03-a225-79b68d25658d)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Implementation_TNAU_2](https://github.com/user-attachments/assets/5af36fac-f71d-4d39-861e-7ce1fcfd198f)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Installation & Setup  
+1. Clone the repository  
+   ```sh
+   git clone https://github.com/Rajesh1308/beehivefrontend.git
+   cd beehivefrontend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
